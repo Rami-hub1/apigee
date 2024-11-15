@@ -17,8 +17,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16 # Specify Node.js version (use 14, 16, or latest as needed)
-    
+        node-version: 18 # Use Node.js version 18 or higher to satisfy dependencies
 
     - name: Install Apigeelint
       run: npm install -g apigeelint@2.12.0

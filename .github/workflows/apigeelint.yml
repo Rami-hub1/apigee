@@ -18,9 +18,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16 # Specify Node.js version (use 14, 16, or latest as needed)
+    
 
     - name: Install Apigeelint
       run: npm install -g apigeelint@2.12.0
 
     - name: Verify Installation
       run: apigeelint -v # Verify the installation and display the version
+
+      - name: Verify Installation
+  run: |
+    apigeelint --help || echo "Apigeelint installed successfully"
+

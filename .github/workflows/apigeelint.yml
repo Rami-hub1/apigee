@@ -26,6 +26,6 @@ jobs:
     - name: Verify Installation
       run: apigeelint -v # Verify the installation and display the version
 
-      - name: Verify Installation
+    - name: Verify Installation
      run: |apigeelint --help || echo "Apigeelint installed successfully"
 
